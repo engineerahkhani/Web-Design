@@ -26,12 +26,108 @@ body {
     margin-bottom: 0;
     border-radius: 0;
 }
+.navbar-nav .fa {
+    color: grey;
 
+}
+.navbar-nav li{
+    margin: 5px 0;
+    width: 110px;
+    text-align: center;
+
+}
+#logo{
+    width: 68px;
+    height: 68px;
+    background: goldenrod;
+    line-height:68px;
+    text-align: center;
+    transform: rotate(45deg);
+    margin-top: 10px;
+
+}
+#logo .fa{
+    color:orangered;
+}
+#home
+{
+    background-image: url('../img/monitoring-g.png');
+    width: 68px;
+    height: 69px;
+
+}#home:hover
+{
+    background-image: url('../img/monitoring-b.png');
+     width: 68px;
+     height: 69px;
+
+}
+#aboutUs{
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: gainsboro;
+    position: relative;
+    top: -50px;
+}
+#aboutUs:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: gainsboro;
+}
+#aboutUs span{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50%;
+}
+#contactUs{
+    width: 68px;
+    height: 68px;
+    background: gainsboro;
+    line-height:68px;
+    text-align: center;
+    transform: rotate(45deg);
+
+}
+#contactUs span{
+    all:unset;
+    transform: rotate(-45deg);
+    vertical-align: middle;
+}
+#contactUs:hover{
+
+    animation-name: example;
+    animation-duration: 0.8s;
+}
+@keyframes example {
+    from {background-color: gainsboro; }
+    to {background-color: #ffcc00;}
+}
+@media (min-width: 768px) {
+    .navbar-nav {
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+}
+#myCarousel{
+    margin-top: 150px;
+}
+.carousel-control{
+    color: #ffcc00;
+    line-height: 355px;
+    height: 355px;
+}
 .carousel-inner img{
     width:100%;
     max-height: 355px !important;
 
 }
+
 /* Add a gray background color and some padding to the footer */
 footer {
     background-color: #f2f2f2;

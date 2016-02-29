@@ -4515,8 +4515,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #ffcc00;
-  background-color: #333333;
+  color: #d91e18;
+  background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -4665,7 +4665,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #fff;
-    background-color: #080808;
+    background-color: transparent;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -6413,12 +6413,13 @@ button.close {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #fff;
   border-radius: 10px;
+
 }
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: #fff;
+  background-color: #ffcc00;
 }
 .carousel-caption {
   position: absolute;

@@ -32,13 +32,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Logo</a>
+                <a id="logo" class="navbar-brand" href="#"><span class="fa fa-chrome fa-2x"></span> </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">خانه</a></li>
-                    <li><a href="#">تماس با ما</a></li>
-                    <li><a href="#">درباره ما</a></li>
+                    <li > <a href="#"><img id="home" class="bottom"><br>   خانه</a></li>
+                    <li><a href="#"><div id="contactUs"><span class="fa fa-2x fa-envelope"></span></div><br>    تماس با ما</a></li>
+                    <li><a href="#"><div id="aboutUs" ><span class="fa fa-2x fa-rss"></span> </div><br>    درباره ما</a></li>
                 </ul>
             </div>
         </div>
@@ -83,11 +83,11 @@
 
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="fa fa-chevron-left" aria-hidden="true"></span>
+            <span class="fa fa-caret-left fa-3x" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="fa fa-caret-right fa-2x" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
@@ -114,7 +114,7 @@
         </div>
     </div>
     <br>
-
+<h2>بسته های پیشنهادی؟؟؟؟؟؟</h2>
     <footer class="container-fluid text-center">
         <p class="text-muted">Copyright &copy; AsreMajazi.com | 2016-winter</p>
     </footer>
