@@ -1,4 +1,57 @@
+#loader{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: 50% 50% no-repeat rgba(255,255,255,1);
+}
 
+#preloader_1{
+    position:relative;
+    text-align: center;
+}
+#preloader_1 span{
+    display:block;
+    bottom:0px;
+    width: 9px;
+    height: 5px;
+    background:#9b59b6;
+    position:absolute;
+    animation: preloader_1 1.5s  infinite ease-in-out;
+}
+
+#preloader_1 span:nth-child(1){
+    left:00px;
+    animation-delay: .1s;
+
+}#preloader_1 span:nth-child(2){
+    left:11px;
+    animation-delay: .2s;
+
+}
+#preloader_1 span:nth-child(3){
+    left:22px;
+    animation-delay: .4s;
+}
+#preloader_1 span:nth-child(4){
+    left:33px;
+    animation-delay: .6s;
+}
+#preloader_1 span:nth-child(5){
+    left:44px;
+    animation-delay: .8s;
+}
+@keyframes preloader_1 {
+    0% {height:5px;transform:translateY(0px);background:#d91e18;}
+    25% {height:30px;transform:translateY(15px);background:#ffcc00;}
+    50% {height:5px;transform:translateY(0px);background:#d91e18;}
+    100% {height:5px;transform:translateY(0px);background:#d91e18;}
+}
 /* Global Styles */
 body {
     font-family: iranianSans;
@@ -8,6 +61,9 @@ body {
     font-size: 14px;
 
 }
+.padded{
+    padding:5px;
+}
 #wrapper{
 
 }
@@ -16,7 +72,14 @@ body {
     text-align: center;
     vertical-align: middle;
 }
-
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
@@ -24,68 +87,79 @@ body {
     font-weight: 700;
 }
 /* Remove the navbar's default margin-bottom and rounded borders */
-.navbar {
+.Topnavbar {
     margin-bottom: 0;
     border-radius: 0;
     /*animation: zoomIn 5s  ;*/
 }
-.navbar-default .navbar-nav > li > a {
+.Topnavbar > li > a {
     color: #ffffff;
 }
-.navbar-nav .fa {
-    color: darkred;
+.Topnavbar .fa {
+    color: #cccccc;
 }
-.navbar-nav li{
-    margin: 5px 0;
+.Topnavbar li{
+    margin: 2px 0;
     width: 110px;
     text-align: center;
 }
-#logo{
-    width: 68px;
-    height: 68px;
-    background: goldenrod;
-    line-height:68px;
+.Topnavbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.Topnavbar ul li {
+    float: right;
+}
+
+.Topnavbar ul li  a {
+    display: block;
+    color: white;
     text-align: center;
-    transform: rotate(45deg);
-    margin-top: 10px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.Topnavbar ul li a:hover:not(.active) {
+    background-color: #111;
+}
+.Topnavbar ul li a:active {
+    background-color: #4CAF50;
+}
+#logo{
 
 }
-#logo .fa{
-    color:orangered;
-}
 .diamond{
-    width: 50px;
-    height: 50px;
-    background: gainsboro;
-    line-height:50px;
+    width: 45px;
+    height: 45px;
+    background: #ffffff;
+    line-height:45px;
     text-align: center;
     transform: rotate(45deg);
     margin-right: 13px;
+
+}
+.diamond:hover{
+    background: #ffcc00;
 }
 .diamond span{
     transform: rotate(-45deg);
     vertical-align: middle;
 }
-.diamond:hover{
-    background-color: #ffcc00;
-    cursor: pointer;
-    -webkit-transition: background-color 1s ease-out;
-    -moz-transition: background-color 1s ease-out;
-    -o-transition: background-color 1s ease-out;
-    transition: background-color 1s ease-out;
-}
-@keyframes example {
-    from {background-color: gainsboro; }
-    to {background-color: #ffcc00;}
-}
+
 @media (min-width: 768px) {
     .navbar-nav {
         margin-right: 3px;
         margin-left: 3px;
     }
+
 }
-#myCarousel{
-    margin-top: 150px;
+#contentSec{
+    margin-top: 112px;
+
 }
 .carousel-control{
     color: #ffcc00;
@@ -118,6 +192,7 @@ footer {
     .carousel-caption {
         display: none;
     }
+
 }
 /* Add a gray background color and some padding to the footer */
 footer {
@@ -133,7 +208,15 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 959px) {}
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    #contentSec{
+        margin-top: 55px;
+    }
+    .navbar-nav li a{
+        float: left;
+
+    }
+}
 
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -147,6 +230,26 @@ footer {
 /*
 * animations
 */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+    animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+    animation-duration: .75s;
+}
+
 @keyframes slideInLeft {
     from {
         transform: translate3d(-100%, 0, 0);
@@ -237,3 +340,35 @@ footer {
     animation-name: pulse;
 }
 
+@keyframes slideOutUp {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        visibility: hidden;
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+.slideOutUp {
+    animation-name: slideOutUp;
+}
+@keyframes zoomOut {
+    from {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.zoomOut {
+    animation-name: zoomOut;
+}

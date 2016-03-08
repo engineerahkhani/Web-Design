@@ -14,45 +14,48 @@
     <link href="css/bootstrap-rtl.css" type="text/css" rel="stylesheet">
     <link href="css/styleSheet.css" type="text/css" rel="stylesheet">
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
-    <link href="css/brand-colors.latest.min.css" type="text/css" rel="stylesheet">
     <script src="js/jquery.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.rtl.min.js"></script>
+
     <script src="http://code.highcharts.com/highcharts.js"></script>
 
     <title>Asre Majazi Web Design Site</title>
+
 </head>
 <body>
+<div id="loader">
+    <div id="preloader_1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+<!--    <h5>عصر مجازی، هر روز بهتر از دیروز . . .</h5>-->
+</div>
 <div id="wrapper">
-    <nav class="navbar navbar-default  navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a id="logo" class="navbar-brand" href="#"><span class="fa fa-chrome fa-2x"></span> </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">
-                            <div class="diamond animated slideInLeft  "><span class="fa fa-2x fa-university"></span></div>
+    <nav class="Topnavbar navbar-fixed-top">
+            <div id="myNavbar">
+                <ul>
+                    <li><a id="home" href="#">
+                            <div class="diamond"><span class="fa fa-2x fa-university"></span></div>
                             <br> صفحه اصلی</a></li>
-                    <li><a href="#">
+                    <li><a id="ourWork" href="#">
                             <div class="diamond"><span class="fa fa-2x fa-suitcase"></span></div>
                             <br> نمونه کارها</a></li>
-                    <li><a href="#">
+                    <li><a id="aboutUs" href="#">
                             <div class="diamond"><span class="fa fa-2x fa-user"></span></div>
                             <br> درباره ما</a></li>
-                    <li><a href="#">
+                    <li><a id="contactUs" href="#">
                             <div class="diamond"><span class="fa fa-2x fa-envelope"></span></div>
                             <br> تماس با ما</a></li>
+                    <li style="float:left"><a class="active" href="#about">Logo</a></li>
             </div>
-        </div>
     </nav>
 <div id="contentSec">
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -63,7 +66,6 @@
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <img src="img/bg-green.png" alt="Image">
-
                 <div class="carousel-caption ">
                     <h5>
                         <strong>خدمات ما</strong>
@@ -91,8 +93,7 @@
                 <img src="img/bg-red2.jpg" alt="Image">
 
                 <div class="carousel-caption">
-                    <    ore Sell $</h3>
-
+                    <h3>  our Sell $</h3>
                     <p>Lorem ipsum...</p>
                 </div>
             </div>
@@ -108,11 +109,10 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-
-    <div id="serviceSec" class="container text-center">
+    <div id="serviceSec" class=" text-center">
         <h3>سفارش سایت های رایج</h3>
         <hr class="small">
-        <div class="col-md-3 col-sm-6">
+        <div id="shop" class="col-md-3 col-sm-6">
             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -128,7 +128,7 @@
                 <a href="#" class="btn btn-block btn-default">Learn More</a>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div id="rss" class="col-md-3 col-sm-6">
             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -144,7 +144,7 @@
                 <a href="#" class="btn btn-default btn-block ">Learn More</a>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div id="personal" class="col-md-3 col-sm-6">
             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -160,7 +160,7 @@
                 <a href="#" class="btn btn-block btn-default">Learn More</a>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div id="adv" class="col-md-3 col-sm-6">
             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -180,21 +180,49 @@
     <br>
 
     <h2>بسته های پیشنهادی؟؟؟؟؟؟</h2>
-    </div>
-    <footer class="container-fluid text-center">
-        <div id="highChartContainer" style="width:100%; height:400px;"></div>
-        <p class="text-muted">Copyright &copy; AsreMajazi.com | 2016-winter</p>
+    <div id="highChartContainer" style="width:100%; height:400px;"></div>
+<!--each section load here-->
 
+</div>
+    <footer class="container-fluid text-center">
+        <p class="text-muted">Copyright &copy; AsreMajazi.com | 2016-winter</p>
     </footer>
 </div>
 <!--wrapper end-->
 <script>
     $(document).ready(function() {
         alert();
+        setTimeout(function(){
+            $("#loader").addClass("animated zoomOut");
+        }, 3000);
 
-        $(".navbar ul li:nth-child(2)").click(function(){
-            $('contentSec').load('layouts/samples.html')
+
+        setTimeout(function(){
+            $('body').addClass('loaded');
+            $('header h1').css('color','#222222');
+        }, 3000);
+
+//        $("#contentSec").load('layouts/home.html');
+//load selected tab data into div
+        $("#home").click(function () {
+            $("#contentSec").load('layouts/home.html');
         });
+
+        $("#ourWork").click(function () {
+            $("#contentSec").load('layouts/ourwork.html');
+        });
+
+        $("#aboutUs").click(function () {
+            $("#contentSec").load('layouts/aboutus.html');
+        });
+
+
+        $("#contactUs").click(function () {
+            $("#contentSec").load('layouts/contactus.html');
+        });
+
+
+
 
         $(".navbar ul li:nth-child(4)").css('animation', 'slideInDown 2.0s');
         $(".navbar ul li:nth-child(3)").css('animation', 'slideInDown 1.5s');
@@ -202,14 +230,20 @@
         $(".navbar ul li:nth-child(1)").css('animation', 'slideInDown 0.5s');
         $("#logo").css('animation', "zoomIn 2s");
 
-        $(".service-item .btn-default").mouseover(function(){
-            $(this).css('animation', 'pulse 2s');
+        $(".service-item .btn-default").mouseenter(function(){
+            $(this).addClass("animated pulse");
+        });
+        $(".service-item .btn-default").mouseleave(function(){
+            $(this).removeClass("animated pulse");
         });
 
         $(window).scroll(function (event) {
             var scrollTop = $(window).scrollTop();
             if (scrollTop >= 50) {
-                $(".service-item").css('animation', 'slideInRight 2s');
+                $("#shop").css('animation', 'slideInRight 0.5s');
+                $("#rss").css('animation', 'slideInRight 1s');
+                $("#personal").css('animation', 'slideInRight 1.5s');
+                $("#adv").css('animation', 'slideInRight 2s');
             }
         });
 //high chart
