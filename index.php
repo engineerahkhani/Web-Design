@@ -8,54 +8,59 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="fonts/iranianSans/iranianSans.css" type="text/css" rel="stylesheet">
 
-    <link href="css/bootstrap-rtl.css" type="text/css" rel="stylesheet">
     <link href="css/styleSheet.css" type="text/css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="fonts/fontAwesome/font-awesome.min.css" type="text/css" rel="stylesheet">
     <script src="js/jquery.js"></script>
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.rtl.min.js"></script>
+    <script src="js/custom.js"></script>
 
-    <script src="http://code.highcharts.com/highcharts.js"></script>
 
     <title>Asre Majazi Web Design Site</title>
 
 </head>
 <body>
-<div id="loader">
-    <div id="preloader_1">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-<!--    <h5>عصر مجازی، هر روز بهتر از دیروز . . .</h5>-->
-</div>
+<!--<div id="loader">-->
+<!--    <div id="preloader_1">-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--    </div>-->
+<!--        <h5>عصر مجازی، هر روز بهتر از دیروز . . .</h5>-->
+<!--</div>-->
+<!--<div id="loader">-->
+<!--    <div id="preloader_1">-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--    </div>-->
+<!--        <h5>عصر مجازی، هر روز بهتر از دیروز . . .</h5>-->
+<!--</div>-->
 <div id="wrapper">
     <nav class="Topnavbar navbar-fixed-top">
-            <div id="myNavbar">
-                <ul>
-                    <li><a id="home" href="#">
-                            <div class="diamond"><span class="fa fa-2x fa-university"></span></div>
-                            <br> صفحه اصلی</a></li>
-                    <li><a id="ourWork" href="#">
-                            <div class="diamond"><span class="fa fa-2x fa-suitcase"></span></div>
-                            <br> نمونه کارها</a></li>
-                    <li><a id="aboutUs" href="#">
-                            <div class="diamond"><span class="fa fa-2x fa-user"></span></div>
-                            <br> درباره ما</a></li>
-                    <li><a id="contactUs" href="#">
-                            <div class="diamond"><span class="fa fa-2x fa-envelope"></span></div>
-                            <br> تماس با ما</a></li>
-                    <li style="float:left"><a class="active" href="#about">Logo</a></li>
-            </div>
+        <div id="myNavbar">
+            <ul>
+                <li><a id="home" href="#">
+                        <div class="diamond"><span class="fa fa-2x fa-university"></span></div>
+                        <h5>صفحه اصلی</h5></a></li>
+                <li><a id="ourWork" href="#">
+                        <div class="diamond"><span class="fa fa-2x fa-suitcase"></span></div>
+                      <h5>   نمونه کارها </h5></a></li>
+                <li><a id="aboutUs" href="#">
+                        <div class="diamond"><span class="fa fa-2x fa-user"></span></div>
+                      <h5>   درباره ما</h5></a></li>
+                <li><a id="contactUs" href="#">
+                        <div class="diamond"><span class="fa fa-2x fa-envelope"></span></div>
+                       <h5>  تماس با ما</h5></a></li>
+                <li style="float:left"><a class="active" href="#about">Logo</a></li>
+        </div>
     </nav>
 <div id="contentSec">
-
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -101,7 +106,7 @@
 
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="fa fa-caret-left fa-3x" aria-hidden="true"></span>
+            <span class="fa fa-caret-left fa-2x" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
@@ -109,14 +114,14 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div id="serviceSec" class=" text-center">
+    <div id="serviceSec" class="text-center">
         <h3>سفارش سایت های رایج</h3>
         <hr class="small">
         <div id="shop" class="col-md-3 col-sm-6">
             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shopping-bag fa-stack-1x text-danger"></i>
+                                <i class="fa fa-shopping-bag fa-stack-1x "></i>
                             </span>
                 <h4>
                     <strong>فروشگاهی</strong>
@@ -132,7 +137,7 @@
             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x text-primary"></i>
+                                <i class="fa fa-rss fa-stack-1x "></i>
                             </span>
                 <h4>
                     <strong>خبری</strong>
@@ -148,7 +153,7 @@
             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-user fa-stack-1x text-warning "></i>
+                                <i class="fa fa-user fa-stack-1x  "></i>
                             </span>
                 <h4>
                     <strong>شخصی</strong>
@@ -164,7 +169,7 @@
             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-share-alt text-success fa-stack-1x "></i>
+                                <i class="fa fa-share-alt  fa-stack-1x "></i>
                             </span>
                 <h4>
                     <strong>تبلیغات</strong>
@@ -180,7 +185,7 @@
     <br>
 
     <h2>بسته های پیشنهادی؟؟؟؟؟؟</h2>
-    <div id="highChartContainer" style="width:100%; height:400px;"></div>
+
 <!--each section load here-->
 
 </div>
@@ -224,10 +229,10 @@
 
 
 
-        $(".navbar ul li:nth-child(4)").css('animation', 'slideInDown 2.0s');
-        $(".navbar ul li:nth-child(3)").css('animation', 'slideInDown 1.5s');
-        $(".navbar ul li:nth-child(2)").css('animation', 'slideInDown 1.0s');
-        $(".navbar ul li:nth-child(1)").css('animation', 'slideInDown 0.5s');
+        $(".Topnavbar ul li:nth-child(4)").css('animation', 'slideInDown 2.0s');
+        $(".Topnavbar ul li:nth-child(3)").css('animation', 'slideInDown 1.5s');
+        $(".Topnavbar ul li:nth-child(2)").css('animation', 'slideInDown 1.0s');
+        $(".Topnavbar ul li:nth-child(1)").css('animation', 'slideInDown 0.5s');
         $("#logo").css('animation', "zoomIn 2s");
 
         $(".service-item .btn-default").mouseenter(function(){
@@ -246,47 +251,7 @@
                 $("#adv").css('animation', 'slideInRight 2s');
             }
         });
-//high chart
-        $(function () {
-            $('#highChartContainer').highcharts({
-                chart: {
-                    type: 'bar'
-                },
-                title: {
-                    text: 'Fruit Consumption'
-                },
-                xAxis: {
-                    categories: ['Apples', 'Bananas', 'Oranges']
-                },
-                yAxis: {
-                    title: {
-                        text: 'Fruit eaten'
-                    }
-                },
-                series: [{
-                    name: 'Jane',
-                    data: [1, 0, 4]
-                }, {
-                    name: 'John',
-                    data: [5, 7, 3]
-                }]
-            });
-        });
-        var chart1; // globally available
-        $(function() {
-            chart1 = new Highcharts.StockChart({
-                chart: {
-                    renderTo: 'container'
-                },
-                rangeSelector: {
-                    selected: 1
-                },
-                series: [{
-                    name: 'USD to EUR',
-                    data: usdtoeur // predefined JavaScript array
-                }]
-            });
-        });
+
 
     });
 </script>
